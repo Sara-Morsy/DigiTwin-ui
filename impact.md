@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
   subgraph Inputs
     A1["WP1: Training & RDMkit templates"]
@@ -11,14 +12,14 @@ flowchart TD
   subgraph Outputs
     B1["Open training materials & FAIR Cookbook recipes"]
     B2["Reusable metadata standards (Bioschemas, DDI, MSCR)"]
-    B3["Open-source software, workflows & AI models (on GitHub/Hugging Face)"]
+    B3["Open-source software, workflows & AI models (GitHub / Hugging Face)"]
     B4["Preregistered study protocols & Registered Reports"]
-    B5["Open Semantic Artifact Catalogue & FAIR data access via EOSC"]
+    B5["Open Semantic Artifact Catalogue & FAIR data access via EOSC + PID Graph"]
   end
 
   subgraph Outcomes
     C1["Adoption by EOSC, ECRIN, ELIXIR & ERICs"]
-    C2["Cross-domain interoperability & discoverability (via PID Graph, PID resolver)"]
+    C2["Cross-domain interoperability & discoverability (FAIRCORE4EOSC, PID resolver, PID graph)"]
     C3["Improved reproducibility of mixed-methods research"]
     C4["Lower cost & faster design of clinical trials"]
     C5["Active citizen & stakeholder participation in twin validation"]
@@ -52,4 +53,3 @@ flowchart TD
   C3 --> D2
   C4 --> D2
   C5 --> D3
-
