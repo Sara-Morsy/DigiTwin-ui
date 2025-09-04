@@ -1,1 +1,55 @@
-{"name": "impact_pathways_diagram", "type": "document", "content": "# Impact Pathways / Theory of Change\n\n```mermaid\nflowchart TD\n\n  subgraph Inputs\n    A1[WP1: Training & RDMkit templates]\n    A2[WP2: Community-driven metadata profiles & FAIRCORE4EOSC integration]\n    A3[WP3: Mixed-methods datasets & semantic artefacts]\n    A4[WP4: AI-assisted FAIRification pipelines & benchmarking]\n    A5[WP6: DigiTwin open database (FAIR Digital Objects)]\n    A6[WPs8-9: Data Management Plan, Ethics & Sustainability]\n  end\n\n  subgraph Outputs\n    B1[Open training materials & FAIR Cookbook recipes]\n    B2[Reusable metadata standards (Bioschemas, DDI, MSCR mappings)]\n    B3[Open-source software, workflows, AI models]\n    B4[Preregistered study protocols & registered reports]\n    B5[Open access to data, publications & semantic catalogue]\n  end\n\n  subgraph Outcomes\n    C1[Adoption by EOSC, ECRIN, ELIXIR]\n    C2[Improved data quality & interoperability]\n    C3[Increased reproducibility of mixed-methods research]\n    C4[Lower cost & faster design of clinical trials]\n    C5[Active citizen & stakeholder participation in twin validation]\n  end\n\n  subgraph LongTermImpacts[Long-Term Impacts]\n    D1[European leadership in FAIR Digital Twin infrastructures]\n    D2[Enhanced evidence-based health and social policies]\n    D3[Stronger societal trust in data-driven health research]\n  end\n\n  A1 --> B1\n  A2 --> B2\n  A2 --> B5\n  A3 --> B3\n  A3 --> B5\n  A4 --> B3\n  A4 --> B5\n  A5 --> B5\n  A5 --> C2\n  A6 --> B4\n  A6 --> B5\n\n  B1 --> C2\n  B2 --> C2\n  B3 --> C3\n  B4 --> C3\n  B5 --> C1\n  C1 --> D1\n  C2 --> D2\n  C3 --> D2\n  C4 --> D2\n  C5 --> D3\n```\n"}
+flowchart TD
+  subgraph Inputs
+    A1["WP1: Training & RDMkit templates"]
+    A2["WP2: Metadata profiles & FAIRCORE4EOSC (MSCR, PID resolver, PID graph)"]
+    A3["WP3: Mixed-methods datasets & semantic artefacts"]
+    A4["WP4: AI-assisted FAIRification pipelines & benchmarks"]
+    A5["WP6: DigiTwin open database (FAIR Digital Objects)"]
+    A6["WPs8–9: DMPs, ethics & sustainability"]
+  end
+
+  subgraph Outputs
+    B1["Open training materials & FAIR Cookbook recipes"]
+    B2["Reusable metadata standards (Bioschemas, DDI, MSCR)"]
+    B3["Open-source software, workflows & AI models (on GitHub/Hugging Face)"]
+    B4["Preregistered study protocols & Registered Reports"]
+    B5["Open Semantic Artifact Catalogue & FAIR data access via EOSC"]
+  end
+
+  subgraph Outcomes
+    C1["Adoption by EOSC, ECRIN, ELIXIR & ERICs"]
+    C2["Cross-domain interoperability & discoverability (via PID Graph, PID resolver)"]
+    C3["Improved reproducibility of mixed-methods research"]
+    C4["Lower cost & faster design of clinical trials"]
+    C5["Active citizen & stakeholder participation in twin validation"]
+  end
+
+  subgraph Impacts["Long-Term Impacts"]
+    D1["European leadership in FAIR Digital Twin infrastructures"]
+    D2["Enhanced evidence-based health & social policies"]
+    D3["Greater societal trust in data-driven health research"]
+  end
+
+  %% Connections
+  A1 --> B1
+  A2 --> B2
+  A2 --> B5
+  A3 --> B3
+  A3 --> B5
+  A4 --> B3
+  A4 --> B5
+  A5 --> B5
+  A6 --> B4
+  A6 --> B5
+
+  B1 --> C2
+  B2 --> C2
+  B3 --> C3
+  B4 --> C3
+  B5 --> C1
+  C1 --> D1
+  C2 --> D1
+  C3 --> D2
+  C4 --> D2
+  C5 --> D3
+
